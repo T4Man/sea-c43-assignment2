@@ -1,0 +1,85 @@
+/*stylesheet for Foundations 1 assignment 2*/
+
+body {
+  background-color: #ddd;
+  max-width: 1073px;
+  max-height: 600px;
+}
+
+header {
+  border-top: 10px solid darkblue;
+  border-bottom: 10px solid darkblue;
+  background-color: lightblue;
+}
+
+footer {
+  border-bottom: 10px solid darkblue;
+  padding-top: 300px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgba(25, 25, 25, 1);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  color: #eee;
+}
+
+figcaption {
+  max-width: 50%;
+}
+
+img {
+  padding-left: 43px;
+  padding-right: 43px;
+}
+
+aside {
+  color: #eee;
+  max-width: 200px;
+  padding: 10px;
+  background-image: url(http://timali4man.com/Images/planets.jpg);
+  background-color: #111;
+}
+
+.main-header {
+  padding-top: 170px;
+  max-width: 90%;
+}
+
+.article1 {
+  width: 50%;
+  float: right;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.article2 {
+  width: 50%;
+  float: right;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.figure1 {
+  float: left;
+  left: 200px;
+  min-width: 440px;
+  width: 33%;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+
+

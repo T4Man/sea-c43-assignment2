@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My F1 Page</title>
+  <link rel="stylesheet" href="f1_style.css">
+</head>
+
+<body>
+  <section id = "page">
+
+    <header class = "main.header">
+      <h1>T4Man's F1 PAGE ("F" IS FOR FUN!)</h1>
+      <h3>(Actually "F" is for Foundations)</h3>
+    </header>
+
+    <figure class = "figure1">
+      <img src="http://timali4man.com/Images/Tim.jpg">
+      <figcaption>
+        Hi! I'm Tim Forman. I like to write my name as
+        <b>T4Man</b> because it's easier to pronounce.
+      </figcaption>
+    </figure>
+
+    <section>
+
+      <article class = "article1">
+        <h3>About Me</h3>
+        <ul>
+          <li>Native Washingtonian</li>
+          <li>Lifelong Washington resident (except for short periods in Alaska, Utah and the Philippines)</li>
+          <li>Now living in beautiful downtown Burien (Yay B-Town!) </li>
+        </ul>
+
+        <h3>Job Stuff</h3>
+        <ul>
+          <li>IT Support in Windows Enterprise enviornments from the late 90's until this year</li>
+          <li>Now I use a Mac</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <aside>
+      <h4>The Fun Zone</h4>
+      <p>Here's a little game about our solar system.</p>
+      <button onclick="planetGame()"><b>Click Me!<b></button>
+
+        <script type="text/javascript">
+
+          function planetGame() {
+            var correctAnswers = 0;
+            var planet = ["VENUS", "MARS", "NEPTUNE"];
+            var question = [
+            "Which is the hottest planet?",
+            "Which planet has the tallest mountain?",
+            "Which planet was discovered using math instead of a telescope?"
+            ];
+
+          for (var i = 0; i < question.length; i++){
+          question[i] = prompt(question[i]).toUpperCase();
+          if (question[i] === planet[i]) {
+          alert("Excellent! That's right!");
+          correctAnswers += 1;
+          } else {
+          alert("Sorry. The correct answer is " + planet[i]);
+          }
+          }
+
+          alert("You got " + correctAnswers + " question(s) correct.");
+
+          if (correctAnswers === 3){
+            alert("Who are you? Neil deGrasse Tyson?");
+          } else if
+          (correctAnswers === 2) {
+          alert("Not bad!");
+          } else {
+          alert("You may want to study up.");
+          }
+          }
+        </script>
+    </aside>
+
+  </section>
+  <footer></footer>
+</body>
+</html>
