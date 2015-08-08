@@ -35,7 +35,7 @@
 
         <h3>Job Stuff</h3>
         <ul>
-          <li>IT Support in Windows Enterprise enviornments from the late 90's until this year</li>
+          <li>IT Support in Windows Enterprise environments from the late 90's until this year</li>
           <li>Now I use a Mac</li>
         </ul>
       </article>
@@ -58,13 +58,13 @@
             "Which planet was discovered using math instead of a telescope?"
             ];
 
-          for (var i = 0; i < question.length; i++){
-          question[i] = prompt(question[i]).toUpperCase();
-          if (question[i] === planet[i]) {
+          for (var index = 0; index < question.length; index++){
+          question[index] = prompt(question[index]).toUpperCase();
+          if (question[index] === planet[index]) {
           alert("Excellent! That's right!");
           correctAnswers += 1;
           } else {
-          alert("Sorry. The correct answer is " + planet[i]);
+          alert("Sorry. The correct answer is " + planet[index]);
           }
           }
 
